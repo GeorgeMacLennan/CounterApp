@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Counter</string>
+    <string name="press_the_button_to_increase_increment">Press the Button to Increase Increment</string>
+    <string name="press_me">Press Me!</string>
+    <string name="reset">Reset</string>
+    <string name="todo">TODO</string>
+</resources>

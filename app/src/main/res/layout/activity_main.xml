@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#631818"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/value_TextView"
+        android:layout_width="323dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="monospace"
+        android:text="@string/press_the_button_to_increase_increment"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tap_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="289dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="107dp"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:onClick="incrementCounter"
+        android:text="@string/press_me"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value_TextView"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="178dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528"
+        app:srcCompat="@drawable/underline"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="322dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="27dp"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:onClick="resetCounter"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
