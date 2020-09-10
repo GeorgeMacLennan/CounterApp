@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void resetCounter (View view) {
-            counterTV.setText("0");
+        counter.setValue(0);
+        counterTV.setText("0");
         }
 }
